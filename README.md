@@ -60,3 +60,69 @@ Each method generates a heatmap highlighting which tokens drove the classificati
 ---
 
 ## Repository Structure
+XAI-RP/
+├── XAI models.ipynb     # Main notebook: fine-tuning + explainability
+├── test.csv             # Held-out test split
+└── README.md
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Python 3.9+
+- 4GB+ GPU recommended for fine-tuning (CPU works but slow)
+
+### Install dependencies
+```bash
+pip install transformers tensorflow shap lime eli5 scikit-learn pandas numpy matplotlib
+```
+
+### Run the notebook
+```bash
+jupyter notebook "XAI models.ipynb"
+```
+
+The notebook walks through:
+1. Loading and preprocessing HateXplain
+2. Fine-tuning DistilBERT
+3. Evaluating on the test set
+4. Generating SHAP / LIME / ELI5 explanations
+
+---
+
+## Sample Output
+
+Given the input `"go back to your country"`, the model classifies it as **hateful** with high confidence. The explainability layer surfaces:
+- **SHAP** weights the phrase `"back to your country"` most heavily
+- **LIME** highlights `"go back"` as the second strongest signal
+- **ELI5** shows token-by-token contribution scores in a color-graded view
+
+All three converge on the same underlying signal — building trust in the model's reasoning rather than treating it as a black box.
+
+---
+
+## Citation
+
+If you use this work, please cite:
+
+```bibtex
+@article{desai2023xai,
+  title   = {XAI for Detection of Incidents of Fake News and Hate Speech},
+  author  = {Desai, Vraj and [co-authors]},
+  journal = {[Journal name]},
+  year    = {2023}
+}
+```
+
+---
+
+## License
+
+MIT
+
+---
+
+## Author
+
+**Vraj Desai** — [GitHub](https://github.com/vrajdesai17) · [LinkedIn](https://linkedin.com/in/vrajdesai17)
