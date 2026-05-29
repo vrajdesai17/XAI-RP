@@ -60,10 +60,10 @@ Each method generates a heatmap highlighting which tokens drove the classificati
 ---
 
 ## Repository Structure
-XAI-RP/
-├── XAI models.ipynb     # Main notebook: fine-tuning + explainability
-├── test.csv             # Held-out test split
-└── README.md
+XAI-RP:
+- XAI models.ipynb     # Main notebook: fine-tuning + explainability
+- test.csv             # Held-out test split
+- README.md
 
 ---
 
