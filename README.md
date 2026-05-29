@@ -2,7 +2,7 @@
 
 A peer-reviewed research project applying **Explainable AI (XAI)** techniques to a transformer-based classifier for joint detection of fake news and hate speech. Fine-tunes **DistilBERT** on the **HateXplain** dataset and layers **SHAP**, **LIME**, and **ELI5** to surface token-level attribution maps that explain *why* the model makes each prediction.
 
-> 📄 **Published Paper:** [Add paper link here]
+> 📄 **Published Paper:** [https://www.taylorfrancis.com/chapters/edit/10.1201/9781003409519-6/explainable-models-detection-incidents-fake-news-hate-speech-vraj-desai-ashray-gattani-harshal-dalvi?context=ubx&refId=1a813f28-767d-4700-886f-9b56f5a6779c]
 
 ---
 
