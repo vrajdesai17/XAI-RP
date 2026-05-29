@@ -119,10 +119,7 @@ If you use this work, please cite:
 
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE)
 
----
 
-## Author
 
-**Vraj Desai** — [GitHub](https://github.com/vrajdesai17) · [LinkedIn](https://linkedin.com/in/vrajdesai17)
